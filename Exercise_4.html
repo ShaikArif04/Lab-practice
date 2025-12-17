@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4 - Product Card</title>
+    <style>
+        /* CSS to style the layout */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        /* The Product Card */
+        .card {
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd; /* Added Border */
+            border-radius: 10px;
+            padding: 15px; /* Added Padding */
+            margin: 20px; /* Added Margin */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Applied Box-shadow */
+            text-align: center;
+        }
+
+        /* Product Image */
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Title and Description */
+        .card h3 {
+            margin: 15px 0 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #777;
+            padding: 0 10px;
+        }
+
+        /* Price */
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e67e22;
+            margin: 15px 0;
+        }
+
+        /* Buy Now Button with Hover Effect */
+        .buy-btn {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s; /* For smooth hover effect */
+        }
+
+        .buy-btn:hover {
+            background-color: #219150; /* Changes color on hover */
+            transform: scale(1.05); /* Slightly enlarges */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/250x180" alt="Product Image">
+        
+        <h3>Smart Watch Pro</h3>
+        <p>Fitness tracking, heart rate monitor, and 5-day battery life.</p>
+        
+        <p class="price">$49.99</p>
+        
+        <button class="buy-btn">Buy Now</button>
+    </div>
+
+</body>
+</html>
